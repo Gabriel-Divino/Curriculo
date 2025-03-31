@@ -1,0 +1,12 @@
+.tech-card {
+    @apply flex flex-col items-center bg-white shadow-lg rounded-lg p-4 transition-transform duration-300 hover:scale-110;
+  }
+  
+  .tech-card img {
+    @apply w-16 h-16 md:w-20 md:h-20;
+  }
+  
+  .tech-card span {
+    @apply mt-2 font-semibold text-gray-700;
+  }
+  
