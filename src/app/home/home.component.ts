@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, OnInit } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 interface ProjectInterface{
   link : string,
@@ -15,7 +15,8 @@ interface ProjectInterface{
 
 })
 
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+
 
   links : ProjectInterface[] = [
     {
@@ -47,12 +48,25 @@ export class HomeComponent {
 
   currentProjectIndex = 0;
 
+
+  ngOnInit(): void {
+    this.change()
+  }
+
   nextProject() {
     this.currentProjectIndex = (this.currentProjectIndex + 1) % this.links.length;
+    this.change()
   }
 
   prevProject() {
     this.currentProjectIndex = (this.currentProjectIndex - 1 + this.links.length) % this.links.length;
+    this.change()
+  }
+
+
+  change(){
+    let x  : any = document.getElementById('iframe');
+    x.src = this.links[this.currentProjectIndex].link;
   }
 
 }
