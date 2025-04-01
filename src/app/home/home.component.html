@@ -119,9 +119,9 @@
     <!-- Área do Projeto -->
     <div class="relative w-[90vw] bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col items-center justify-center overflow-hidden">
       
-      <!-- Botão Esquerda -->
+      <!-- Botão Esquerda (AUMENTADO) -->
       <button (click)="prevProject()" 
-        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md">
+        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-full shadow-lg border-2 border-white text-3xl transition-transform duration-300 ease-in-out hover:scale-110 animate-pulse">
         ←
       </button>
 
@@ -144,36 +144,68 @@
         <a href="{{ links[currentProjectIndex].github }}" target="_blank" class="btn btn-outline">GitHub</a>
       </div>
 
-      <!-- Botão Direita -->
+      <!-- Botão Direita (AUMENTADO) -->
       <button (click)="nextProject()" 
-        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-full shadow-md">
+        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-full shadow-lg border-2 border-white text-3xl transition-transform duration-300 ease-in-out hover:scale-110 animate-pulse">
         →
       </button>
     </div>
+  </div>
+</section>
+  
+<!-- Formação -->
+<section id="formacao" class="px-10 py-16">
+  <h2 class="text-3xl font-bold text-center">Formação Acadêmica</h2>
+  <div class="mt-8 space-y-6 flex flex-col items-center">
+    
+    <!-- Engenharia de Computação -->
+    <div class="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-5xl">
+      <h3 class="text-2xl font-bold text-gray-800">UNIVESP - Engenharia de Computação</h3>
+      <p class="text-gray-600 mt-2 text-lg">2020-2024 | TCC: Blockchain e sua aplicabilidade no comércio eletrônico.</p>
+
+      <!-- Botão para abrir o vídeo -->
+      <div class="mt-4 flex justify-center">
+        <details class="dropdown w-full">
+          <summary class="btn btn-primary text-lg w-full">Ver Vídeo do TCC</summary>
+          <div class="p-4 mt-2 bg-white shadow-lg rounded-lg w-full flex justify-center">
+            <iframe 
+              class="w-full max-w-[1100px] h-[450px] md:h-[500px] lg:h-[550px] rounded-lg border border-gray-300"
+              src="https://www.youtube.com/embed/zlVlYHd5enc"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </details>
+      </div>
+    </div>
+
+    <!-- Bacharelado em TI -->
+    <div class="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-5xl">
+      <h3 class="text-2xl font-bold text-gray-800">UNIVESP - Bacharelado em TI</h3>
+      <p class="text-gray-600 mt-2 text-lg">2020-2022 | TCC: Sistema de gerenciamento de veículos para concessionárias.</p>
+
+      <!-- Botão para abrir o vídeo -->
+      <div class="mt-4 flex justify-center">
+        <details class="dropdown w-full">
+          <summary class="btn btn-primary text-lg w-full">Ver Vídeo do TCC</summary>
+          <div class="p-4 mt-2 bg-white shadow-lg rounded-lg w-full flex justify-center">
+            <iframe 
+              class="w-full max-w-[1100px] h-[450px] md:h-[500px] lg:h-[550px] rounded-lg border border-gray-300"
+              src="https://www.youtube.com/embed/6vqu_AQpdHg"
+              frameborder="0"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </details>
+      </div>
+    </div>
+
   </div>
 </section>
 
 
 
 
-
-  
-  
-  
-    <!-- Formação -->
-    <section id="formacao" class="px-10 py-16">
-      <h2 class="text-3xl font-bold text-center">Formação Acadêmica</h2>
-      <div class="mt-8 space-y-6">
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-gray-800">UNIVESP - Engenharia de Computação</h3>
-          <p class="text-gray-600 mt-2">2020-2024 | TCC: Blockchain e sua aplicabilidade no comércio eletrônico.</p>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-gray-800">UNIVESP - Bacharelado em TI</h3>
-          <p class="text-gray-600 mt-2">2020-2022 | TCC: Sistema de gerenciamento de veículos para concessionárias.</p>
-        </div>
-      </div>
-    </section>
   
     <!-- Atividades -->
     <section id="atividades" class="px-10 py-16 bg-white">
