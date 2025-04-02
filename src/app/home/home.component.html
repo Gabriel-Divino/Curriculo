@@ -1,60 +1,76 @@
 <div class="min-h-screen bg-gray-100 text-gray-900">
   
-<!-- Navbar Fixa e Corrigida -->
-<div class="navbar fixed top-0 left-0 w-full z-50 bg-white shadow-md px-8 py-2">
-    <div class="flex-1">
-      <a class="text-2xl font-bold text-gray-800">Gabriel Dev</a>
+<!-- Seção Inicial (foto e objetivo) -->
+<section id="inicio" class="px-10 py-12 bg-gradient-to-r from-indigo-900 via-purple-800 to-black text-white flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+  <!-- Foto do Profissional -->
+  <div class="flex-shrink-0 w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl border-4 border-white">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEOsAHmuH4a0g/profile-displayphoto-shrink_800_800/B4EZTCKZYNHcAc-/0/1738424293477?e=1749081600&v=beta&t=O9agXEYzadSH4-ZzyYCYZZJpVhLcIqoJkt-CByKrVkQ" alt="Sua Foto" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Texto ao lado da Foto -->
+  <div class="max-w-3xl space-y-6 md:space-y-0 md:ml-6 flex flex-col md:flex-row items-start justify-between">
+    <!-- Informações Pessoais -->
+    <div class="md:w-1/2 space-y-2 text-xl text-center md:text-left">
+      <h1 class="text-4xl font-bold tracking-wide">Gabriel do Divino Negri</h1>
+      <p>Engenheiro de Computação (Desenvolvimento/TI)</p>
     </div>
-    <div class="hidden md:flex">
-      <ul class="menu menu-horizontal px-1 space-x-4">
-        <li><a href="#experiencia" class="hover:text-blue-600">Experiência</a></li>
-        <li><a href="#formacao" class="hover:text-blue-600">Formação</a></li>
-        <li><a href="#atividades" class="hover:text-blue-600">Atividades</a></li>
-        <li><a href="#contato" class="hover:text-blue-600">Contato</a></li>
-      </ul>
+
+    <!-- Objetivo Profissional -->
+    <div class="md:w-1/2 mt-6 md:mt-0">
+      <h2 class="text-2xl font-bold">OBJETIVO</h2>
+      <p class="text-lg font-medium text-center md:text-left">
+        Contribuir com empresas de tecnologia, desenvolvendo soluções escaláveis e inovadoras, com foco em eficiência e otimização de processos.
+      </p>
     </div>
   </div>
+
+  <!-- Chamadas de Ação -->
+  <div class="flex justify-center md:justify-start space-x-6 mt-6">
+    <a href="#contato" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold text-lg transition-transform duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-800">
+      Mais Informações
+    </a>
+  </div>
+</section>
+
+
   
   
-    <!-- Seção Hero -->
-<!-- Seção Hero Ajustada -->
-<div class="flex flex-col md:flex-row items-center justify-between px-10 py-20 mt-16">
-    <!-- Texto -->
-    <div class="max-w-lg">
-      <h1 class="text-4xl font-bold text-gray-900">Gabriel</h1>
-      <p class="mt-3 text-lg text-gray-600">
-        Desenvolvedor Backend com experiência em APIs, integração de sistemas e blockchain.
+<!-- Experiência -->
+<section id="experiencia" class="px-10 py-16 bg-white">
+  <h2 class="text-3xl font-bold text-center">Experiência Profissional</h2>
+  <div class="grid md:grid-cols-2 gap-6 mt-8">
+    
+    <div class="bg-gray-100 p-6 rounded-lg shadow-md relative">
+      <h3 class="text-xl font-bold text-gray-800">Bihands - Desenvolvedor Backend</h3>
+      <p class="text-gray-600 mt-2">
+        Desenvolvimento de integração com relógios esportivos (Polar, Fitbit, Garmin) 
+        para uma plataforma de saúde e desempenho esportivo, permitindo a 
+        sincronização de dados em tempo real, como métricas de atividades físicas e saúde.
       </p>
-      <div class="mt-5">
-        <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+      <div class="flex justify-end">
+        <span class="relative inline-block px-4 py-1 mt-3 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600 rounded-full shadow-md transition-transform duration-300 hover:scale-110">
+          <i class="fas fa-calendar-alt"></i> 2024
+        </span>
       </div>
     </div>
-  
-    <!-- Imagem Ajustada -->
+
+    <div class="bg-gray-100 p-6 rounded-lg shadow-md relative">
+      <h3 class="text-xl font-bold text-gray-800">Loja do Ótico - Desenvolvedor Backend</h3>
+      <p class="text-gray-600 mt-2">
+        Desenvolvimento de múltiplas integrações para e-commerce, utilizando 
+        APIs para métodos de pagamento, meios de transporte e sistemas ERP 
+        (como Tiny), otimizando a gestão de vendas, logística e estoque.
+      </p>
+      <div class="flex justify-end">
+        <span class="relative inline-block px-4 py-1 mt-3 text-white font-semibold bg-gradient-to-r from-green-500 to-blue-500 rounded-full shadow-md transition-transform duration-300 hover:scale-110">
+          <i class="fas fa-calendar-alt"></i> 2022-2023
+        </span>
+      </div>
+    </div>
 
   </div>
-  
-  
-    <!-- Experiência -->
-    <section id="experiencia" class="px-10 py-16 bg-white">
-      <h2 class="text-3xl font-bold text-center">Experiência Profissional</h2>
-      <div class="grid md:grid-cols-2 gap-6 mt-8">
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-gray-800">Bihands - Desenvolvedor Backend</h3>
-          <p class="text-gray-600 mt-2">
-            Desenvolvimento de integração com relógios esportivos (Polar, Fitbit, Garmin), permitindo sincronização de métricas de saúde e desempenho esportivo em tempo real.
-          </p>
-          <span class="badge badge-primary mt-3">2024</span>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-gray-800">Loja do Ótico - Desenvolvedor Backend</h3>
-          <p class="text-gray-600 mt-2">
-            Desenvolvimento de múltiplas integrações para e-commerce, incluindo APIs de pagamento, transporte e sistemas ERP como Tiny, otimizando vendas e logística.
-          </p>
-          <span class="badge badge-primary mt-3">2022-2023</span>
-        </div>
-      </div>
-    </section>
+</section>
+
 
 <!-- Seção Tecnologias que Domino -->
 <section id="tecnologias" class="px-10 py-16 bg-gray-50 text-center">
@@ -62,141 +78,202 @@
   <p class="text-gray-600 mt-2">Essas são algumas das tecnologias com as quais trabalho no meu dia a dia.</p>
 
   <div class="mt-10 flex flex-wrap justify-center gap-6">
-    <!-- Ícones de Tecnologias -->
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-10 h-10">
+    <!-- Ícones de Tecnologias com Efeito -->
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" title="JavaScript" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" title="React" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" title="Angular" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png" alt="Typescript" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/1200px-Typescript.svg.png" title="Typescript" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://i.namu.wiki/i/X7RPRZJiL_bDk-b5yfaeCqEaINp3iwm7ngVhzN9LDg4hNjz0Bs3QTo7pgbCfGW3xp_sQZxMGUfnxBAXGNFwGKw.svg" alt="NestJS" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://i.namu.wiki/i/X7RPRZJiL_bDk-b5yfaeCqEaINp3iwm7ngVhzN9LDg4hNjz0Bs3QTo7pgbCfGW3xp_sQZxMGUfnxBAXGNFwGKw.svg" title="NestJS" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" alt="Next.js" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" title="Next.js" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" title="Python" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://solidity-portuguese.readthedocs.io/pt/latest/_images/logo.svg" alt="Solidity" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://solidity-portuguese.readthedocs.io/pt/latest/_images/logo.svg" title="Solidity" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail.png" alt="SQL" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://w7.pngwing.com/pngs/747/798/png-transparent-mysql-logo-mysql-database-web-development-computer-software-dolphin-marine-mammal-animals-text-thumbnail.png" title="SQL" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" alt="MongoDB" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png" title="MongoDB" class="w-10 h-10">
     </div>
 
     <!-- Novas Tecnologias -->
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://codigosimples.net/wp-content/uploads/2016/03/css3.jpg" alt="CSS" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://codigosimples.net/wp-content/uploads/2016/03/css3.jpg" title="CSS" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://codekitapp.com/images/help/free-tailwind-icon@2x.png" alt="Tailwind" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://codekitapp.com/images/help/free-tailwind-icon@2x.png" title="Tailwind" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" alt="HTML" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEc9A_S6BPxCDRp5WjMFEfXrpCu1ya2OO-Lw&s" title="HTML" class="w-10 h-10">
     </div>
-    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="Bootstrap" class="w-10 h-10">
+    <div class="w-16 h-16 flex items-center justify-center rounded-full bg-gray-100 shadow-lg
+                transform transition-transform duration-300 ease-in-out hover:scale-110">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" title="Bootstrap" class="w-10 h-10">
     </div>
   </div>
 </section>
+
 
 <!-- Seção Projetos -->
 <section id="projetos" class="px-10 py-16 bg-white text-center hidden md:block">
   <h2 class="text-3xl font-bold text-gray-900">Meus Projetos</h2>
   <p class="text-gray-600 mt-2">Aqui estão algumas das aplicações que desenvolvi.</p>
 
-  <div class="mt-10 flex flex-col items-center w-full">
+  <!-- Botão para abrir o modal -->
+  <div class="mt-6">
+    <button (click)="openModal()" class="btn btn-primary text-lg">
+      <i class="fas fa-laptop-code"></i> Ver Projetos
+    </button>
+  </div>
+</section>
+
+<!-- Modal de Projetos -->
+<div id="modalProjetos" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+  <div class="bg-white p-8 rounded-lg shadow-lg max-w-6xl w-full relative">
+    
+    <!-- Botão Fechar -->
+    <button (click)="closeModal()" class="absolute top-4 right-4 text-gray-600 hover:text-gray-900 text-2xl">
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Título do Projeto -->
+    <h3 id="tituloProjeto" class="text-2xl font-bold text-center text-gray-900"></h3>
+
     <!-- Área do Projeto -->
-    <div class="relative w-[90vw] bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col items-center justify-center overflow-hidden">
-      
-      <!-- Botão Esquerda (AUMENTADO) -->
-      <button (click)="prevProject()" 
-        class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-full shadow-lg border-2 border-white text-3xl transition-transform duration-300 ease-in-out hover:scale-110 animate-pulse">
-        ←
-      </button>
-
-      <!-- Título -->
-      <h3 class="text-xl font-bold text-gray-800">{{ links[currentProjectIndex].title }}</h3>
-
+    <div class="mt-6 flex flex-col items-center">
       <!-- Iframe do Projeto -->
-      <div class="mt-4 flex justify-center w-full">
-        <iframe 
-          id="iframe"
-          src="https://bets-two-nu.vercel.app/"
-          class="w-[85vw] h-[80vh] md:h-[85vh] rounded-lg border-2 border-gray-300"
-          frameborder="0">
-        </iframe>
-      </div>
+      <iframe id="iframeProjeto"
+        class="w-full h-[400px] md:h-[500px] rounded-lg border-2 border-gray-300"
+        frameborder="0">
+      </iframe>
 
       <!-- Links do Projeto -->
       <div class="mt-4 flex justify-center space-x-4">
-        <a href="{{ links[currentProjectIndex].link }}" target="_blank" class="btn btn-primary">Ver Projeto</a>
-        <a href="{{ links[currentProjectIndex].github }}" target="_blank" class="btn btn-outline">GitHub</a>
+        <a id="linkProjeto" href="#" target="_blank" class="btn btn-primary">
+          <i class="fas fa-eye"></i> Ver Projeto
+        </a>
+        <a id="githubProjeto" href="#" target="_blank" class="btn btn-outline">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </div>
 
-      <!-- Botão Direita (AUMENTADO) -->
-      <button (click)="nextProject()" 
-        class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-blue-500 hover:bg-blue-600 text-white font-bold py-4 px-6 rounded-full shadow-lg border-2 border-white text-3xl transition-transform duration-300 ease-in-out hover:scale-110 animate-pulse">
-        →
-      </button>
+      <!-- Botões de Navegação -->
+      <div class="mt-6 flex justify-between w-full px-6">
+        <button (click)="prevProject()" class="text-3xl text-blue-600 hover:text-blue-800">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button (click)="nextProject()" class="text-3xl text-blue-600 hover:text-blue-800">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
     </div>
   </div>
-</section>
+</div>
   
 <!-- Formação -->
-<section id="formacao" class="px-10 py-16">
-  <h2 class="text-3xl font-bold text-center">Formação Acadêmica</h2>
-  <div class="mt-8 space-y-6 flex flex-col items-center">
+<section id="formacao" class="px-10 py-16 bg-gray-50">
+  <h2 class="text-3xl font-bold text-center text-gray-900">Formação Acadêmica</h2>
+  <div class="mt-8 space-y-8 flex flex-col items-center">
     
     <!-- Engenharia de Computação -->
-    <div class="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-5xl">
-      <h3 class="text-2xl font-bold text-gray-800">UNIVESP - Engenharia de Computação</h3>
-      <p class="text-gray-600 mt-2 text-lg">2020-2024 | TCC: Blockchain e sua aplicabilidade no comércio eletrônico.</p>
-
-      <!-- Botão para abrir o vídeo -->
-      <div class="mt-4 flex justify-center">
-        <details class="dropdown w-full">
-          <summary class="btn btn-primary text-lg w-full">Ver Vídeo do TCC</summary>
-          <div class="p-4 mt-2 bg-white shadow-lg rounded-lg w-full flex justify-center">
-            <iframe 
-              class="w-full max-w-[1100px] h-[450px] md:h-[500px] lg:h-[550px] rounded-lg border border-gray-300"
-              src="https://www.youtube.com/embed/zlVlYHd5enc"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </details>
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl border-2 border-gray-200 hover:shadow-xl transition duration-300 ease-in-out">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold text-gray-800">UNIVESP - Engenharia de Computação</h3>
+        <span class="text-xl font-semibold text-blue-500">2020-2024</span>
+      </div>
+      <p class="text-gray-600 mt-2 text-lg">
+        TCC: Blockchain e sua aplicabilidade no comércio eletrônico.
+      </p>
+      <div class="mt-4 flex items-center gap-3">
+        <i class="fas fa-graduation-cap text-blue-500"></i>
+        <span class="text-gray-500">Graduação Completa</span>
       </div>
     </div>
 
     <!-- Bacharelado em TI -->
-    <div class="bg-gray-100 p-8 rounded-lg shadow-md w-full max-w-5xl">
-      <h3 class="text-2xl font-bold text-gray-800">UNIVESP - Bacharelado em TI</h3>
-      <p class="text-gray-600 mt-2 text-lg">2020-2022 | TCC: Sistema de gerenciamento de veículos para concessionárias.</p>
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-4xl border-2 border-gray-200 hover:shadow-xl transition duration-300 ease-in-out">
+      <div class="flex items-center justify-between">
+        <h3 class="text-2xl font-bold text-gray-800">UNIVESP - Bacharelado em TI</h3>
+        <span class="text-xl font-semibold text-green-500">2020-2022</span>
+      </div>
+      <p class="text-gray-600 mt-2 text-lg">
+        TCC: Sistema de gerenciamento de veículos para concessionárias.
+      </p>
+      <div class="mt-4 flex items-center gap-3">
+        <i class="fas fa-graduation-cap text-green-500"></i>
+        <span class="text-gray-500">Bacharelado Completo</span>
+      </div>
+    </div>
 
-      <!-- Botão para abrir o vídeo -->
-      <div class="mt-4 flex justify-center">
-        <details class="dropdown w-full">
-          <summary class="btn btn-primary text-lg w-full">Ver Vídeo do TCC</summary>
-          <div class="p-4 mt-2 bg-white shadow-lg rounded-lg w-full flex justify-center">
-            <iframe 
-              class="w-full max-w-[1100px] h-[450px] md:h-[500px] lg:h-[550px] rounded-lg border border-gray-300"
-              src="https://www.youtube.com/embed/6vqu_AQpdHg"
-              frameborder="0"
-              allowfullscreen>
-            </iframe>
-          </div>
-        </details>
+  </div>
+</section>
+
+
+<!-- Atividades -->
+<section id="atividades" class="px-10 py-16 bg-white">
+  <h2 class="text-3xl font-bold text-center text-gray-900">Atividades</h2>
+  <div class="grid md:grid-cols-2 gap-8 mt-10">
+
+    <!-- Atividade 1 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+      <div class="flex items-center gap-4">
+        <div class="text-4xl text-yellow-500">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">Vencedor do EU-IoT Hackathon</h3>
+      </div>
+      <p class="text-gray-600 mt-4 text-lg">Projeto "Sustainable Irrigation System" - Sistema de irrigação inteligente e sustentável usando IoT.</p>
+      <div class="mt-6">
+        <span class="text-sm font-semibold text-gray-500"></span>
+        <!-- Badge Estilizada -->
+        <span class="inline-block bg-yellow-500 text-white rounded-full px-4 py-2 mt-2 text-lg font-semibold shadow-md transform transition-all">
+          Ano : 2022
+        </span>
+      </div>
+    </div>
+
+    <!-- Atividade 2 -->
+    <div class="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105">
+      <div class="flex items-center gap-4">
+        <div class="text-4xl text-blue-500">
+          <i class="fas fa-book"></i>
+        </div>
+        <h3 class="text-2xl font-bold text-gray-800">Curso Web23</h3>
+      </div>
+      <p class="text-gray-600 mt-4 text-lg">Formação Web2 e Web3, abordando blockchain, DApps, DeFi e smart contracts.</p>
+      <div class="mt-6">
+        <span class="text-lg font-semibold text-gray-500"></span>
+        <!-- Badge Estilizada -->
+        <span class="inline-block bg-blue-500 text-white rounded-full px-4 py-2 mt-2 text-lg font-semibold shadow-md transform transition-all">
+          Status : Em andamento
+        </span>
       </div>
     </div>
 
@@ -205,34 +282,42 @@
 
 
 
+  
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-indigo-900 via-purple-800 to-black text-white py-12">
+  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+    
+    <!-- Mais Informações -->
+    <div class="text-center md:text-left space-y-6 w-full md:w-1/2">
+      <h2 class="text-2xl font-bold mb-4">Mais Informações</h2>
+      
+      <!-- Informações Pessoais -->
+      <div class="space-y-2">
+        <p class="text-lg font-semibold">26 . 11 . 2001 - 23 anos</p>
+        <p class="text-lg font-semibold">Brasil</p>
+        <p class="text-lg font-semibold">+55 (19) 99183-3951</p>
+        <p class="text-lg font-semibold">gabrieldnegri&#64;gmail.com</p>
+      </div>
+    </div>
 
-  
-    <!-- Atividades -->
-    <section id="atividades" class="px-10 py-16 bg-white">
-      <h2 class="text-3xl font-bold text-center">Atividades</h2>
-      <div class="grid md:grid-cols-2 gap-6 mt-8">
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-gray-800">🏆 Vencedor do EU-IoT Hackathon</h3>
-          <p class="text-gray-600 mt-2">Projeto "Sustainable Irrigation System" - Sistema de irrigação inteligente e sustentável usando IoT.</p>
-          <span class="badge badge-success mt-3">2022</span>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-bold text-gray-800">📚 Curso Web23</h3>
-          <p class="text-gray-600 mt-2">Formação Web2 e Web3, abordando blockchain, DApps, DeFi e smart contracts.</p>
-          <span class="badge badge-info mt-3">Em andamento</span>
-        </div>
-      </div>
-    </section>
-  
-    <!-- Contato -->
-    <footer id="contato" class="p-10 bg-gray-200 text-gray-800 text-center">
-      <h2 class="text-xl font-bold">Entre em Contato</h2>
-      <p class="mt-2">Email: <a href="mailto:seuemail@email.com" class="text-blue-600">seuemail.com</a></p>
-      <div class="flex justify-center space-x-4 mt-4">
-        <a href="https://github.com/seu-github" class="btn btn-outline btn-primary">GitHub</a>
-        <a href="https://linkedin.com/in/seu-linkedin" class="btn btn-outline btn-primary">LinkedIn</a>
-      </div>
-    </footer>
+    <!-- Redes Sociais -->
+    <div class="mt-6 md:mt-0 flex justify-center space-x-6 w-full md:w-1/2">
+      <a href="https://github.com/Gabriel-Divino" class="text-blue-400 hover:text-blue-300 text-2xl" target="_blank" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/gabriel-do-divino-negri-705082306" class="text-blue-500 hover:text-blue-400 text-2xl" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center mt-8">
+    <p class="text-sm opacity-70">© 2025 Gabriel do Divino Negri. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
   
   </div>
   
