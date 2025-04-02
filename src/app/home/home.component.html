@@ -1,37 +1,40 @@
 <div class="min-h-screen bg-gray-100 text-gray-900">
   
 <!-- Seção Inicial (foto e objetivo) -->
-<section id="inicio" class="px-10 py-12 bg-gradient-to-r from-indigo-900 via-purple-800 to-black text-white flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0">
+<section id="inicio" class="px-12 py-14 bg-gradient-to-r from-cyan-900 via-cyan-700 to-blue-800 text-white flex flex-col md:flex-row items-center justify-between space-y-12 md:space-y-0">
+  
   <!-- Foto do Profissional -->
-  <div class="flex-shrink-0 w-48 h-48 md:w-60 md:h-60 rounded-full overflow-hidden shadow-xl border-4 border-white">
-    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEOsAHmuH4a0g/profile-displayphoto-shrink_800_800/B4EZTCKZYNHcAc-/0/1738424293477?e=1749081600&v=beta&t=O9agXEYzadSH4-ZzyYCYZZJpVhLcIqoJkt-CByKrVkQ" alt="Sua Foto" class="w-full h-full object-cover">
+  <div class="flex-shrink-0 w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden shadow-lg border-4 border-white">
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQEOsAHmuH4a0g/profile-displayphoto-shrink_800_800/B4EZTCKZYNHcAc-/0/1738424293477?e=1749081600&v=beta&t=O9agXEYzadSH4-ZzyYCYZZJpVhLcIqoJkt-CByKrVkQ" 
+         alt="Gabriel Negri" class="w-full h-full object-cover">
   </div>
 
   <!-- Texto ao lado da Foto -->
-  <div class="max-w-3xl space-y-6 md:space-y-0 md:ml-6 flex flex-col md:flex-row items-start justify-between">
+  <div class="max-w-4xl flex flex-col md:flex-row items-start justify-between w-full md:ml-10 space-y-8 md:space-y-0">
+    
     <!-- Informações Pessoais -->
-    <div class="md:w-1/2 space-y-2 text-xl text-center md:text-left">
+    <div class="md:w-1/2 space-y-4 text-lg text-center md:text-left">
       <h1 class="text-4xl font-bold tracking-wide">Gabriel do Divino Negri</h1>
-      <p>Engenheiro de Computação (Desenvolvimento/TI)</p>
+      <p class="text-xl font-medium opacity-90">Engenheiro de Computação | Desenvolvedor Full Stack</p>
     </div>
 
     <!-- Objetivo Profissional -->
-    <div class="md:w-1/2 mt-6 md:mt-0">
+    <div class="md:w-1/2 space-y-4">
       <h2 class="text-2xl font-bold">OBJETIVO</h2>
-      <p class="text-lg font-medium text-center md:text-left">
-        Contribuir com empresas de tecnologia, desenvolvendo soluções escaláveis e inovadoras, com foco em eficiência e otimização de processos.
+      <p class="text-lg font-medium opacity-90 text-center md:text-left leading-relaxed">
+        Impulsionar a inovação e otimização de processos através de tecnologia de ponta. Como Engenheiro de Computação e Desenvolvedor Full Stack, busco criar soluções escaláveis e eficientes, utilizando sistemas distribuídos, arquitetura backend robusta e blockchain.
       </p>
     </div>
   </div>
 
   <!-- Chamadas de Ação -->
-  <div class="flex justify-center md:justify-start space-x-6 mt-6">
-    <a href="#contato" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold text-lg transition-transform duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-800">
+  <div class="flex justify-center md:justify-start space-x-8 mt-8 w-full">
+    <a href="#footer" class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-full font-semibold text-lg transition-transform duration-300 transform hover:scale-105 hover:bg-white hover:text-gray-800">
       Mais Informações
     </a>
   </div>
-</section>
 
+</section>
 
   
   
@@ -74,8 +77,8 @@
 
 <!-- Seção Tecnologias que Domino -->
 <section id="tecnologias" class="px-10 py-16 bg-gray-50 text-center">
-  <h2 class="text-3xl font-bold text-gray-900">Tecnologias que Domino</h2>
-  <p class="text-gray-600 mt-2">Essas são algumas das tecnologias com as quais trabalho no meu dia a dia.</p>
+  <h2 class="text-3xl font-bold text-gray-900">Tecnologias e Ferramentas</h2>
+  <p class="text-gray-600 mt-2">Estas são as principais tecnologias que utilizo no meu dia a dia</p>
 
   <div class="mt-10 flex flex-wrap justify-center gap-6">
     <!-- Ícones de Tecnologias com Efeito -->
@@ -144,7 +147,7 @@
 <!-- Seção Projetos -->
 <section id="projetos" class="px-10 py-16 bg-white text-center hidden md:block">
   <h2 class="text-3xl font-bold text-gray-900">Meus Projetos</h2>
-  <p class="text-gray-600 mt-2">Aqui estão algumas das aplicações que desenvolvi.</p>
+  <p class="text-gray-600 mt-2">Confira algumas das aplicações que desenvolvi</p>
 
   <!-- Botão para abrir o modal -->
   <div class="mt-6">
@@ -282,40 +285,43 @@
 
 
 
-  
 <!-- Footer -->
-<footer class="bg-gradient-to-r from-indigo-900 via-purple-800 to-black text-white py-12">
-  <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-    
+<footer class="bg-gradient-to-r from-cyan-900 via-cyan-800 to-cyan-700 text-white py-12" id="footer">
+  <div class="container mx-auto px-6 flex flex-col items-center space-y-6">
+
     <!-- Mais Informações -->
-    <div class="text-center md:text-left space-y-6 w-full md:w-1/2">
-      <h2 class="text-2xl font-bold mb-4">Mais Informações</h2>
-      
-      <!-- Informações Pessoais -->
-      <div class="space-y-2">
-        <p class="text-lg font-semibold">26 . 11 . 2001 - 23 anos</p>
-        <p class="text-lg font-semibold">Brasil</p>
-        <p class="text-lg font-semibold">+55 (19) 99183-3951</p>
-        <p class="text-lg font-semibold">gabrieldnegri&#64;gmail.com</p>
-      </div>
+    <h2 class="text-2xl font-bold">Mais Informações</h2>
+    
+    <!-- Informações Pessoais -->
+    <div class="text-lg space-y-3 text-center">
+      <p><i class="fas fa-birthday-cake mr-2"></i> 26 . 11 . 2001 - 23 anos</p>
+      <p><i class="fas fa-map-marker-alt mr-2"></i>Mococa, São Paulo - Brasil</p>
+      <p>
+        <a href="https://wa.me/5519991833951" target="_blank" class="hover:text-green-400 transition-colors">
+          <i class="fab fa-whatsapp mr-2"></i> +55 (19) 99183-3951
+        </a>
+      </p>
+      <p><i class="fas fa-envelope mr-2"></i> gabrieldnegri&#64;gmail.com</p>
     </div>
 
     <!-- Redes Sociais -->
-    <div class="mt-6 md:mt-0 flex justify-center space-x-6 w-full md:w-1/2">
-      <a href="https://github.com/Gabriel-Divino" class="text-blue-400 hover:text-blue-300 text-2xl" target="_blank" aria-label="GitHub">
+    <div class="flex space-x-6 text-2xl">
+      <a href="https://github.com/Gabriel-Divino" class="hover:text-gray-300 transition-colors" target="_blank" aria-label="GitHub">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://www.linkedin.com/in/gabriel-do-divino-negri-705082306" class="text-blue-500 hover:text-blue-400 text-2xl" target="_blank" aria-label="LinkedIn">
+      <a href="https://www.linkedin.com/in/gabriel-do-divino-negri-705082306" class="hover:text-blue-300 transition-colors" target="_blank" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
-  </div>
 
-  <!-- Copyright -->
-  <div class="text-center mt-8">
-    <p class="text-sm opacity-70">© 2025 Gabriel do Divino Negri. Todos os direitos reservados.</p>
+    <!-- Copyright -->
+    <div class="text-sm opacity-70 mt-6">
+      <p>© 2025 Gabriel do Divino Negri. Todos os direitos reservados.</p>
+    </div>
+
   </div>
 </footer>
+
 
 
   
